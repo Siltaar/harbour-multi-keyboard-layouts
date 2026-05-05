@@ -110,7 +110,7 @@ KeyboardLayout {
     KeyboardRow {
         CharacterKey {
             caption: "a"; captionShifted: "A"; symView: "1"; symView2: "€"
-            accents: "aâàæäáãå%"; accentsShifted: "AÂÀÆÄÁÃÅ%"
+            accents: "%aàâæäáãå"; accentsShifted: "%AÀÂÆÄÁÃÅ"
             nativeAccents: "àâ"; nativeAccentsShifted: "ÀÂ";
             Text {
                 text: showSymbolsOnKey("%");
@@ -131,7 +131,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "e"; captionShifted: "E"; symView: "3"; symView2: "$"
-            accents: "èeéêë~"; accentsShifted: "ÈEÉÊË~"
+            accents: "~eéèêë"; accentsShifted: "~EÉÈÊË"
             nativeAccents: "èéêë"; nativeAccentsShifted: "ÈÉÊË";
             Text {
                 text: showSymbolsOnKey("~");
@@ -143,14 +143,14 @@ KeyboardLayout {
         }
         CharacterKey { caption: "r"; captionShifted: "R"; symView: "4"; symView2: "¥"; accents: "|"; accentsShifted: "|";
             Text {
-                text: showSymbolsOnKey("~");
+                text: showSymbolsOnKey("|");
                 color: Theme.highlightColor;
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                 }
             }
         }
-        CharacterKey { caption: "t"; captionShifted: "T"; symView: "5"; symView2: "₹"; accents: "tþ["; accentsShifted: "TÞ[";
+        CharacterKey { caption: "t"; captionShifted: "T"; symView: "5"; symView2: "₹"; accents: "[tþ"; accentsShifted: "[TÞ";
             Text {
                 text: showSymbolsOnKey("[");
                 color: Theme.highlightColor;
@@ -159,7 +159,7 @@ KeyboardLayout {
                 }
             }
         }
-        CharacterKey { caption: "y"; captionShifted: "Y"; symView: "6"; symView2: "%"; accents: "ýy¥]"; accentsShifted: "ÝY¥]";
+        CharacterKey { caption: "y"; captionShifted: "Y"; symView: "6"; symView2: "%"; accents: "]yý¥"; accentsShifted: "]YÝ¥";
             Text {
                 text: showSymbolsOnKey("]");
                 color: Theme.highlightColor;
@@ -170,7 +170,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "u"; captionShifted: "U"; symView: "7"; symView2: "<"
-            accents: "üûuùú<"; accentsShifted: "ÜÛUÙÚ<"
+            accents: "<uùúûü"; accentsShifted: "<UÙÚÛÜ"
             nativeAccents: "ûùü"; nativeAccentsShifted: "ÛÙÜ";
             Text {
                 text: showSymbolsOnKey("<");
@@ -182,7 +182,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "i"; captionShifted: "I"; symView: "8"; symView2: ">"
-            accents: "íìîiï>"; accentsShifted: "ÍÌÎIÏ>"
+            accents: ">iïîíì"; accentsShifted: ">IÏÌÎÍ"
             nativeAccents: "îï"; nativeAccentsShifted: "ÎÏ";
             Text {
                 text: showSymbolsOnKey(">");
@@ -194,7 +194,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "o"; captionShifted: "O"; symView: "9"; symView2: "["
-            accents: "øöòóôoœ{"; accentsShifted: "ØÖÒÓÔOŒ{"
+            accents: "øöòóô{oœ"; accentsShifted: "ØÖÒÓÔ{OŒ"
             nativeAccents: "ô"; nativeAccentsShifted: "Ô";
             Text {
                 text: showSymbolsOnKey("{");
@@ -234,7 +234,7 @@ KeyboardLayout {
                 }
             }
         }
-        CharacterKey { caption: "d"; captionShifted: "D"; symView: "+"; symView2: "|"; accents: "dð&"; accentsShifted: "DÐ&";
+        CharacterKey { caption: "d"; captionShifted: "D"; symView: "+"; symView2: "|"; accents: "&dð"; accentsShifted: "&DÐ";
             Text {
                 text: showSymbolsOnKey("&");
                 color: Theme.highlightColor;
@@ -331,7 +331,7 @@ KeyboardLayout {
                 }
             }
         }
-        CharacterKey { caption: "c"; captionShifted: "C"; symView: "/"; symView2: "÷"; accents: "cç\""; accentsShifted: "CÇ\"";
+        CharacterKey { caption: "c"; captionShifted: "C"; symView: "/"; symView2: "÷"; accents: "\"cç"; accentsShifted: "\"CÇ";
             Text {
                 text: showSymbolsOnKey("\"");
                 color: Theme.highlightColor;
@@ -358,7 +358,7 @@ KeyboardLayout {
                 }
             }
         }
-        CharacterKey { caption: "n"; captionShifted: "N"; symView: ";"; symView2: "„"; accents: "nñ/"; accentsShifted: "NÑ/";
+        CharacterKey { caption: "n"; captionShifted: "N"; symView: ";"; symView2: "„"; accents: "/nñ"; accentsShifted: "/NÑ";
             Text {
                 text: showSymbolsOnKey("/");
                 color: Theme.highlightColor;
