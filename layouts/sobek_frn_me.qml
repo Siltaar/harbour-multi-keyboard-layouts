@@ -1,4 +1,5 @@
 // Copyright (c) 2019, Adel Noureddine. All rights reserved.
+// Contribution by Simon Descarpentries, 2026-05.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
@@ -170,7 +171,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "u"; captionShifted: "U"; symView: "7"; symView2: "<"
-            accents: "<uùúûü"; accentsShifted: "<UÙÚÛÜ"
+            accents: "<uµùúûü"; accentsShifted: "«UµÙÚÛÜ"
             nativeAccents: "ûùü"; nativeAccentsShifted: "ÛÙÜ";
             Text {
                 text: showSymbolsOnKey("<");
@@ -182,7 +183,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "i"; captionShifted: "I"; symView: "8"; symView2: ">"
-            accents: ">iïîíì"; accentsShifted: ">IÏÌÎÍ"
+            accents: ">iïîíì"; accentsShifted: "»IÏÌÎÍ"
             nativeAccents: "îï"; nativeAccentsShifted: "ÎÏ";
             Text {
                 text: showSymbolsOnKey(">");
@@ -204,7 +205,7 @@ KeyboardLayout {
                 }
             }
         }
-        CharacterKey { caption: "p"; captionShifted: "P"; symView: "0"; symView2: "]"; accents: "}"; accentsShifted: "}";
+        CharacterKey { caption: "p"; captionShifted: "P"; symView: "0"; symView2: "]"; accents: "}p§"; accentsShifted: "}P§";
             Text {
                 text: showSymbolsOnKey("}");
                 color: Theme.highlightColor;
@@ -225,7 +226,7 @@ KeyboardLayout {
                 }
             }
         }
-        CharacterKey { caption: "s"; captionShifted: "S"; symView: "#"; symView2: "^"; accents: "#"; accentsShifted: "#";
+        CharacterKey { caption: "s"; captionShifted: "S"; symView: "#"; symView2: "^"; accents: "#S$"; accentsShifted: "#S$";
             Text {
                 text: showSymbolsOnKey("#");
                 color: Theme.highlightColor;
@@ -297,7 +298,7 @@ KeyboardLayout {
                 }
             }
         }
-        CharacterKey { caption: "m"; captionShifted: "M"; symView: "?"; symView2: "¿"; accents: "^"; accentsShifted: "^";
+        CharacterKey { caption: "m"; captionShifted: "M"; symView: "?"; symView2: "¿"; accents: "^mµ"; accentsShifted: "^Mµ";
             Text {
                 text: showSymbolsOnKey("^");
                 color: Theme.highlightColor;
@@ -373,6 +374,14 @@ KeyboardLayout {
             implicitWidth: punctuationKeyWidth
             fixedWidth: !splitActive
             symView: ":"; symView2: "‰";
+            accents: "`"; accentsShifted: "`";
+            Text {
+                text: showSymbolsOnKey("`");
+                color: Theme.highlightColor;
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                }
+            }
         }
 
         BackspaceKey {}
