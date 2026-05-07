@@ -171,7 +171,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "u"; captionShifted: "U"; symView: "7"; symView2: "<"
-            accents: "<uµùúûü"; accentsShifted: "«UµÙÚÛÜ"
+            accents: "ùú<uµûü"; accentsShifted: "ÙÚ«UµÛÜ"
             nativeAccents: "ûùü"; nativeAccentsShifted: "ÛÙÜ";
             Text {
                 text: showSymbolsOnKey("<");
@@ -183,7 +183,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "i"; captionShifted: "I"; symView: "8"; symView2: ">"
-            accents: ">iïîíì"; accentsShifted: "»IÏÌÎÍ"
+            accents: "îï>iíì"; accentsShifted: "ÏÌ»IÎÍ"
             nativeAccents: "îï"; nativeAccentsShifted: "ÎÏ";
             Text {
                 text: showSymbolsOnKey(">");
@@ -226,7 +226,7 @@ KeyboardLayout {
                 }
             }
         }
-        CharacterKey { caption: "s"; captionShifted: "S"; symView: "#"; symView2: "^"; accents: "#S$"; accentsShifted: "#S$";
+        CharacterKey { caption: "s"; captionShifted: "S"; symView: "#"; symView2: "^"; accents: "#s$"; accentsShifted: "#S$";
             Text {
                 text: showSymbolsOnKey("#");
                 color: Theme.highlightColor;
